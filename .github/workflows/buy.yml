@@ -8,8 +8,7 @@ jobs:
     name: Just Buy Stuff
     concurrency: buy
     permissions:
-      contents: read
-      packages: read
+      contents: write
     env:
       ALPACA_ENPOINT: ${{ secrets.ALPACA_ENPOINT }}
       ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
