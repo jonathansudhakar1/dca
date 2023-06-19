@@ -2,7 +2,6 @@ name: Buy
 on:
   schedule:
     - cron:  '*/5 * * * *'
-
 jobs:
   buy:
     name: Just Buy Stuff
@@ -29,4 +28,4 @@ jobs:
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Buy ${{GITHUB_RUN_ID}}
+          commit_message: Automated Buy ${{github.run_id}}
