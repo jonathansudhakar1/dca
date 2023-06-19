@@ -61,7 +61,7 @@ def get_symbols(items) -> List[Dict]:
             symbol = item.split('=')[0]
             quantity = item.split('=')[1]
             logger.info(f"Symbol: {symbol} Quantity: {quantity}")
-            notional = False if quantity[0] == '$' else True
+            notional = True if quantity[0] == '$' else False
             quantity = float(quantity.replace('$', ''))
             d.append({'symbol' : symbol, 'quantity' : quantity, 'notional' : notional})
     return d
