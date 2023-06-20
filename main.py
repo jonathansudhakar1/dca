@@ -18,10 +18,11 @@ LOG_FORMAT = '%(asctime)s %(name)10.10s %(levelname).7s %(filename)15.15s %(line
 logging.basicConfig(format=LOG_FORMAT, level=logging.INFO)
 logger = logging.getLogger('DCA')
 
+alpaca_endpoint = os.getenv("ALPACA_ENPOINT")
 alpaca_api_key = os.getenv("ALPACA_KEY_ID")
 alpaca_secret_key = os.getenv("ALPACA_SECRET")
-alpaca_trading = TradingClient(alpaca_api_key, alpaca_secret_key)
-alpaca_data_historical = StockHistoricalDataClient(alpaca_api_key, alpaca_secret_key)
+alpaca_trading = TradingClient(alpaca_api_key, alpaca_secret_key, url_override=alpaca_endpoint)
+alpaca_data_historical = StockHistoricalDataClient(alpaca_api_key, alpaca_secret_key, url_override=alpaca_endpoint)
 
 def main() -> None:
     logger.info("Starting DCA")
