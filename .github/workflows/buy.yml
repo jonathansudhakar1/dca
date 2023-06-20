@@ -1,4 +1,4 @@
-name: Buy
+name: Scheduled Buy
 on:
   #workflow_dispatch:
   schedule:
@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
     env:
-      ALPACA_ENPOINT: ${{ secrets.ALPACA_ENPOINT }}
+      ALPACA_ENDPOINT: ${{ secrets.ALPACA_ENDPOINT }}
       ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
       ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
     runs-on: ubuntu-latest
