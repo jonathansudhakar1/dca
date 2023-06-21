@@ -61,5 +61,9 @@
         </table>
         <h3>PnL over time (calculations may not be accurate):</h3>
         <img src="history.png"/>
+
+        <hr>
+
+        <p>Updated at {{ updated_at }}</p>
     </body>
 </html>

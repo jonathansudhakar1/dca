@@ -111,7 +111,8 @@ def update_report(symbols: List[str]) -> None:
     template_output = template('readme.tpl', {
         'symbols': symbols,
         'positions': positions,
-        'total_change_pct': total_change_pct
+        'total_change_pct': total_change_pct,
+        'updated_at': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     })
     readme_md = md(template_output)
     with open('README.md', 'w') as f:
