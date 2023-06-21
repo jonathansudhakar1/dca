@@ -88,6 +88,7 @@ def update_report(symbols: List[str]) -> None:
     logger.info(f"Days since start date: {days_since_start_date}")
     portfolio = alpaca_trading.get("/account/portfolio/history", {
         "period": f"{days_since_start_date}D",
+        "timeframe": "1D",
     })
     portfolio = parse_obj_as(PortfolioHistory, portfolio)
     
