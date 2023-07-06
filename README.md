@@ -21,7 +21,7 @@ Introduction
  The goal of this experiment is to buy leveraged/inverse funds in regular intervals. For this experiment I will be buying `SVIX` and `FNGU` for about $10 each per day. This is a very risky strategy and using real money is not recommended.
    
 
- I could not find a broker that supports automatic recurring investments in leveraged funds or one that has an api and supports fractional shares. Most brokers like Robinhood and Webull that support recurring investments do not support recurring investments in leveraged or inverse funds. Large brokers that do have APIs like Tradestation and IBKR do not allow fractional shares. M1 Finance does not support `SVIX` and `FNGU`. Alpaca is the only broker that I found that supports fractional shares (not for `SVIX` at the time of writing) but they don't let you deposit money in the account in regular intervals. For this experiment I will stick with Alpaca because I don't have a better option. 
+ I could not find a broker that supports automatic recurring investments in leveraged funds or one that has an api and supports fractional shares. Most brokers like Robinhood and Webull that support recurring investments do not support recurring investments in leveraged or inverse funds. Large brokers that do have APIs like Tradestation and IKBR do not allow fractional shares. M1 Finance does not support `SVIX` and `FNGU`. Alpaca is the only broker that I found that supports fractional shares (not for `SVIX` at the time of writing) but they don't let you deposit money in the account in regular intervals. For this experiment I will stick with Alpaca because I don't have a better option. 
  * `SVIX` - 1x VIX Short Term Futures ETN - 1 share every Tuesday and Thursday since they don't support fractional shares.
 * `FNGU` - 3x FANG+ ETN - $10 worth everyday
 
@@ -68,9 +68,9 @@ Results
 
 | Asset | Average Price | Current Price | ROI | 📈 |
 | --- | --- | --- | --- | --- |
-| FNGU | $183.57360521 | $193.68 | 5.51% | &#128994;&#128515; |
-| SVIX | $26.78598 | $27.85 | 3.97% | &#128994;&#128515; |
-| **Total** |  |  | **4.70%** | &#128994;&#128518; |
+| FNGU | $183.681029732 | $184.9965 | 0.72% | &#128994;&#128515; |
+| SVIX | $26.319766667 | $23.98 | -8.89% | &#128308;&#128546; |
+| **Total** |  |  | **-4.55%** | &#128308;&#128557; |
 
 ### PnL over time (calculations may not be accurate):
 
@@ -81,6 +81,6 @@ Results
 ---
 
 
-Updated at 2023-07-05 15:05:01
+Updated at 2023-07-06 15:04:37
 
 
