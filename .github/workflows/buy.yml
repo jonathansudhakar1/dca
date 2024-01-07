@@ -1,9 +1,9 @@
 name: Scheduled Buy
 on:
   #workflow_dispatch:
-  schedule:
-    - cron:  '0 15 * * 2,4'
-    - cron:  '0 15 * * 1,3,5'
+  # schedule:
+  #   - cron:  '0 15 * * 2,4'
+  #   - cron:  '0 15 * * 1,3,5'
 jobs:
   buy:
     name: Just Buy Stuff

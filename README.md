@@ -3,6 +3,8 @@
 
 ![](https://github.com/jonathansudhakar1/dca/actions/workflows/buy.yml/badge.svg?event=schedule)  
 
+*⛔ STOPPED THIS EXPERIMENT AFTER APPROXIMATELY 6 MONTHS. THIS STRATEGY RETURNED 12% WHILE S&P500 RETURNED 6% IN THE SAME TIMEFRAME BEATING IT BY 2X⛔*
+
 Dollar Cost Averaging with Leveraged/Inverse Funds
 ==================================================
 
